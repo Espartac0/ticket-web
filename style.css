@@ -21,7 +21,9 @@ tr.titulos_tabla {
   width: 290px;
   max-width: 290px;
 }
-
+.sumatorias-titulo{
+  font-weight: bold;
+}
 img {
   max-width: inherit;
   width: inherit;
