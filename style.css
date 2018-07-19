@@ -21,7 +21,8 @@ tr.titulos_tabla {
   width: 290px;
   max-width: 290px;
 }
-.sumatorias-titulo{
+
+.sumatorias-titulos{
   font-weight: bold;
 }
 img {
@@ -29,8 +30,4 @@ img {
   width: inherit;
 }
 
-@media print{
-  .oculto-impresion, .oculto-impresion *{
-    display: none !important;
-  }
-}
+@media print { @page{ size: 80mm 297mm;  } } 
