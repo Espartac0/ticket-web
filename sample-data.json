@@ -1,0 +1,61 @@
+{
+   "URL_LOGO":"https://www.sparksuite.com/images/logo.png",
+   "FLAG":true,
+   "NOMBRE":"GRIFO MARCELO'S S.R.L.",
+   "DIRECCION":"AV. HUAYRUROPATA NRO. 1700 CUSCO-CUSCO-WANCHAQ",
+   "RUC":"20357768269",
+   "COD_TIPOCOMPROBANTE": "01",
+   "DOCUMENTO": "FACTURA ELECTRONICA",
+   "SERIE": "F001",
+   "NUMERO": "00005591",
+   "MOTIVO_ANULACION":"ERROR DE EMISION",
+   "CLIENTE": "PALE CONSULTORES E.I.R.L",
+   "COD_DOCCLIENTE":"6",
+   "RUC_CLIENTE": "20491228297",
+   "DIRECCION_CLIENTE": "MZA. U LOTE.20 ASC. TUPAC AMARU CUSCO - CUSCO - SAN SEBASTIAN",
+   "FECHA_EMISION": "24-06-2018",
+   "FECHA_VENCIMIENTO": "24/06/2018",
+   "FORMA_PAGO": "EFECTIVO",
+   "GLOSA": "POR LA VENTA DE MERCADERIA",
+   "OBSERVACIONES":"O/C RS-2165-2018",
+   "CAJERO": "CAJERO",
+   "PLACA_VEHICULAR":"X3U466",
+   "ESCRITURA_MONTO":"SON: CIENTO VEINTE SIETE CON 52/100 SOLES ",
+   "GRAVADAS":"108.07",
+   "EXONERADAS":"0.00",
+   "GRATUITAS":"0.00",
+   "INAFECTAS":"0.00",
+   "DESCUENTO":"0.00",
+   "IGV":"19.45",
+   "TOTAL":"127.52",
+   "PIE_DE_PAGINA":"Representación impresa del comprobante electrónico, consulte su documento en www.ifacturacion.pe",
+   "DETALLES": [{
+        "DESCRIPCION": "GASOHOL 84 OCTANOS",
+        "UNIDAD": "GALONES",
+        "CANTIDAD": "2.00",
+        "PRECIO_UNITARIO":"11.78",
+        "DESCUENTO":"0.00",
+        "SUBTOTAL":"23.56"
+    }, {
+        "DESCRIPCION": "GASOHOL 90 OCTANOS",
+        "UNIDAD": "GALONES",
+        "CANTIDAD": "4.50",
+        "PRECIO_UNITARIO":"11.99",
+        "DESCUENTO":"0.00",
+        "SUBTOTAL":"53.96"
+    },{
+        "DESCRIPCION": "DIESEL S5-B5-UV"    ,
+        "UNIDAD": "GALONES",
+        "CANTIDAD": "4.14",
+        "PRECIO_UNITARIO":"12.05",
+        "DESCUENTO":"0.00",
+        "SUBTOTAL":"50.00"
+    },{
+        "DESCRIPCION": "GASEOSA INCACOLA",
+        "UNIDAD": "UNIDADES",
+        "CANTIDAD": "1.00",
+        "PRECIO_UNITARIO":"0.00",
+        "DESCUENTO":"0.00",
+        "SUBTOTAL":"0.00"
+    }]
+}

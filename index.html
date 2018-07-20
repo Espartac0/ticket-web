@@ -6,21 +6,32 @@
 </head>
 <body > 
   <div class="ticket">    
-    <p class="encabezado">MARKET PALERP<br>AV. DE LA CULTURA NRO 4581 <BR>
-      CUSCO-CUSCO-CUSCO<br>RUC: 20491228297<br>FACTURA ELECTRONICA<br>FE01-00004710<br>
-      Fecha Emision: 17/07/2018 16:34</p>
-    <p class = "cliente" >
-      RUC:20501145978<BR>
-        SEÑOR(ES): PC CONSULTING S.A.C.<BR>
-          DIRECCION:AV. PROCERES NRO 102 SAN ISIDRO-LIMA-LIMA <BR>        
-    </p>
+    <div class="encabezado"> 
+      <p class="nombre-empresa">MARKET PALERP</p> 
+      <p class="direccion-empresa">AV. DE LA CULTURA NRO 4581 CUSCO-CUSCO-CUSCO</p>
+      <p class="ruc-emisor">RUC: 20491228297</p>
+      <p class="tipo-doc"> FACTURA ELECTRONICA</p>
+      <p class="correlativo">FE01-00008547</p>
+      <p class="fecha-emision">FECHA EMISIÓN: 18-07-2018 16:34</p>
+      <p class = "cliente" >
+        <span>RUC:20501145978</span><br>
+        <span>SEÑOR(ES): PC CONSULTING S.A.C.</span><br>
+        <span>DIRECCION:AV. PROCERES NRO 102 SAN ISIDRO-LIMA-LIMA</span><br>
+      </p>
+    </div>
+    <div class="anulacion">
+      <span>MOTIVO O SUSTENTO:</span><br>
+      <span>por error de emision</span><br>
+      <span>COMPROBANTE AFECTADO:</span><br>
+      <span>FE01-00098451</span><br><br>
+    </div>
     <table>
         <tr class = "titulos_tabla">              
-          <td>CANT.</td>          
-          <td>U.M.</td>
-          <td>PRECIO</td>
-          <td>DESC.</td>          
-          <td>SUB-TOTAL</td>
+          <th>CANT.</th>          
+          <th style="padding-left:15px;">U.M.</th>
+          <th style="padding-right:8px;">PRECIO</th>
+          <th style="padding-right:15px;">DESC.</th>          
+          <th>IMPORTE</th>
         </tr>  
         <tr>
           <td colspan="3">GASEOSA COCACOLA 2.5L</td>
@@ -30,7 +41,7 @@
           <td >UNIDADES</td>
           <td >7.90</td>
           <td >0.00</td>          
-          <td >39.50</td>
+          <td style="padding-left:23px">39.50</td>
         </tr>
         <tr>
           <td colspan="3">SIXPACK CERVEZA CUSQUEÑA TRIGO 330ML</td>
@@ -40,42 +51,65 @@
           <td >UNIDADES</td>
           <td >19.70</td>
           <td >0.00</td>          
-          <td >19.70</td>
+          <td style="padding-left:23px">19.70</td>
         </tr>
         <tr>
           <td colspan="3">PAPAS LAYS 255GR</td>
         </tr>
         <tr>         
-          <td>3.00</td>-
+          <td>3.00</td>
           <td>UNIDADES</td>
           <td>7.29</td>
           <td>0.00</td>          
-          <td>21.87</td>
+          <td style="padding-left:23px">21.87</td>
         </tr>
     </table>
     <table class="sumatorias">
       <tr>
         <td class="sumatorias-titulos">SUB TOTAL: </td>
         <td>S/</td>
-        <td>68.70</td>
+        <td class="sub-total-item">68.70</td>
       </tr>
       <tr>
         <td class="sumatorias-titulos">I.G.V.(18%): </td>
         <td>S/</td>
-        <td>12.37</td>
+        <td class="sub-total-item">12.37</td>
       </tr>
       <tr>          
         <td class="sumatorias-titulos">TOTAL: </td>
         <td>S/</td>
-        <td> 81.07</td>
+        <td class="sub-total-item" style="font-weight: bold;"> 81.07</td>
       </tr>
     </table>     
-    <p class="monto_letras">SON OCHENTA Y UNO CON 07/100 SOLES<BR><br>¡GRACIAS POR SU COMPRA!      
-  </div>
+    <p class="monto_letras">SON OCHENTA Y UNO CON 07/100 SOLES<BR><br>      
+  
   <div class = "codigo" >
+      <input id="comp" type="text" value="20491228297|06|FE01|00098451|12.37|81.07|18-07-2018|01|20501145978"
+      style = "display:none;"/><br />
+      <div id="qrcode" style = "border: black 1px solid;
+      padding: 10px;
+      margin-top: -20px;
+      margin-left: 77px;
+      position: absolute;
+      " ></div>
+      <script src="E:\PEDRO\REPORTES_WEB\qrcodejs-master/qrcode.js"></script>
+      <script>
+          var qrcode = new QRCode("qrcode");
+          function makeCode () {		
+              var elText = document.getElementById("comp");
+              qrcode.makeCode(elText.value);  
+          }
+          makeCode();
+      </script>            
+  </div>
+  <div class="pie-pagina">
+    <span>USUARIO: CAJERO</span>
+    <span>v.:F|9.1.4</span><br>
+    <p style="text-align: center;">Representación impresa del comprobante electrónico, consulte su documento en www.ifacturacion.pe</p>
+    
 
   </div>
-  
+</div>
 </body>
 
 </html>
