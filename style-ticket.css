@@ -54,11 +54,7 @@ td.sub-total-item {
 }
 .ticket {
   width: 290px;
-  max-width: 290px;
-}
-
-
-
+  max-width: 290px;}
 img {
   max-width: inherit;
   width: inherit;
@@ -68,5 +64,5 @@ img {
 .pie-pagina {
   padding-top: 129px;
 }
-
+/**/
 @media print { @page{ size: 80mm 297mm;  } } 
