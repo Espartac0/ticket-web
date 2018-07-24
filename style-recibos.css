@@ -32,27 +32,11 @@
 /*del cliente*/
 .cliente{
   text-align: left;
-}
-/*items a facturar*/
-.titulos_tabla{
-  text-align: left;
-}
-th {  
-  border-top: 1px dashed black;
-  border-bottom: 1px dashed black;   
-}
-.sumatorias-titulos{  
-  font-weight: bold;
-}
-.sumatorias{
-  text-align: right;
-  padding-left: 105px;
   border-top: 1px dashed black;
   border-bottom: 1px dashed black;
+  padding: 5px 0 5px 0;
 }
-td.sub-total-item {
-  padding-left: 65px;
-}
+
 .ticket {
   width: 290px;
   max-width: 290px;}
@@ -62,9 +46,11 @@ img {
 }
 
 /*pie de pagina*/
-.pie-pagina {
-  padding-top: 114px;
-  
+.pie-pagina{
+    padding-top: 64px;
+    text-align: center;
+    padding-left: 4px;
 }
+
 /*IMPRESION*/
 @media print { @page{ size: 80mm 297mm;  margin: 0 0 0 0;} } 
